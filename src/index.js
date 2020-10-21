@@ -8,5 +8,5 @@ const menuCardsMarkup = createMenuCardsMarkup(menuData);
 menuCardsList.insertAdjacentHTML('afterbegin', menuCardsMarkup);
 
 function createMenuCardsMarkup(data) {
-    return data.map(menuMarkup).join('');
+    return menuMarkup(data);
 }
