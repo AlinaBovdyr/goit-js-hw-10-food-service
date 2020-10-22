@@ -1,12 +1,6 @@
-import menuMarkup from './templates/menu-card.hbs'
-import menuData from './menu.json'
+import initMenuList from './scripts/menu-list';
+import initTheme from './scripts/themepicker';
 import './styles.css';
 
-const menuCardsList = document.querySelector('.js-menu');
-const menuCardsMarkup = createMenuCardsMarkup(menuData);
-
-menuCardsList.insertAdjacentHTML('afterbegin', menuCardsMarkup);
-
-function createMenuCardsMarkup(data) {
-    return menuMarkup(data);
-}
+initMenuList();
+initTheme();
